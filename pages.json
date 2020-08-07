@@ -1,0 +1,253 @@
+{
+	"easycom": {
+		"u-(.*)": "@/uview/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/tabBar/index/index",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"app-plus":{
+					"bounce":"none",
+					"titleNView":{
+						"type":"transparent"
+					}
+	
+				}
+			}
+		},
+		{
+			"path": "pages/tabBar/dongtai/dongtai",
+			"style": {
+				"navigationBarTitleText": "动态",
+				"app-plus":{
+					"bounce":"none",
+					"scrollIndicator":"none",
+					"titleNView":{
+						"type":"transparent"
+					}
+				}
+			}
+		}, {
+			"path": "pages/tabBar/my/my",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"app-plus":{
+					"bounce":"none",
+					"titleNView":{
+						"type":"transparent"
+					}
+				}
+			}
+		}, {
+			"path": "pages/tabBar/kefu/kefu",
+			"style": {
+				"navigationBarTitleText": "客服"
+			}
+		},
+		{
+			"path": "pages/logins/login/login",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		}, {
+			"path": "pages/logins/register/register",
+			"style": {
+				"navigationBarTitleText": "注册",
+				"app-plus":{
+					"animationType":"slide-in-bottom"
+				}
+			}
+		}, {
+			"path": "pages/logins/phone/phone",
+			"style": {
+				"navigationBarTitleText": "手机号登录",
+				"app-plus":{
+					"titleNView":{
+						"buttons":[
+							{
+								"color":"#79b8ff",
+								"text":"注册",
+								"fontSize":"16px",
+								"float":"right"
+							}
+						]
+					}
+				}
+			}
+		}, {
+			"path": "pages/logins/sigin-login/sigin-login",
+			"style": {
+				"navigationBarTitleText": "账号登录",
+				"app-plus":{
+					"titleNView":{
+						"buttons":[
+							{
+								"color":"#79b8ff",
+								"text":"注册",
+								"fontSize":"16px",
+								"float":"right"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/indexpage/citySelect/citySelect",
+			"style": {
+				"navigationBarTitleText": "城市选择",
+				"app-plus":{
+					"titleNView":false,
+					"animationType":"slide-in-bottom"
+						
+				}
+			}
+		}
+        ,{
+            "path" : "pages/indexpage/calendarSelect/calendarSelect",
+            "style" : {
+				"navigationBarTitleText": "日期选择",
+				"app-plus":{
+					"titleNView":false,
+					"animationType":"slide-in-bottom"
+						
+				}
+			}
+        }
+        ,{
+            "path" : "pages/logins/loginFace/loginFace",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/search-hotel/search-hotel",
+            "style" : {
+				"navigationBarTitleText": "寻找酒店",
+				"app-plus":{
+					"titleNView":false,
+					"animationType":"slide-in-right"
+						
+				}
+			}
+        }
+        ,{
+            "path" : "pages/hotel-detail/hotel-detail",
+            "style" : {
+				"navigationBarTitleText": "详情",
+				"app-plus":{
+					"bounce":"none",
+					"animationType":"slide-in-bottom",
+					"titleNView":{
+						"type":"transparent",
+						"buttons":[
+							{
+								"color":"#333333",
+								"colorPressed":"#BBBBBB",
+								"float":"right",
+								"fontSize":"22px",
+								"fontSrc":"./static/font/iconfont.ttf",
+								"text":"\ue740"
+							},
+							{
+								"color":"#333333",
+								"colorPressed":"#BBBBBB",
+								"float":"right",
+								"fontSize":"22px",
+								"fontSrc":"./static/font/iconfont.ttf",
+								"text":"\ue610"
+							}
+						]
+					}
+					
+				}
+			}
+        }
+        ,{
+            "path" : "pages/pay/pay",
+            "style" : {
+				"navigationBarTitleText": "支付订单",
+				"app-plus":{
+					"titleNView":false,
+					"animationType":"slide-in-right"
+				}
+			}
+        }
+        ,{
+            "path" : "pages/confirm-pay/confirm-pay",
+            "style" : {
+				"navigationBarTitleText": "支付"
+			}
+        }
+        ,{
+            "path" : "pages/hotel-order/hotel-order",
+            "style" : {
+				"navigationBarTitleText": "我的订单"
+			}
+        }
+        ,{
+            "path" : "pages/checkPhone/checkPhone",
+            "style" : {
+				"navigationBarTitleText": "手机号验证"
+			}
+        }
+        ,{
+            "path" : "pages/checkIdentity/checkIdentity",
+            "style" : {
+				"navigationBarTitleText": "确认身份"
+			}
+        }
+        ,{
+            "path" : "pages/room-nav/room-nav",
+            "style" : {
+				"navigationBarTitleText": "内景导航"
+			}
+        }
+        ,{
+            "path" : "pages/select-room/select-room",
+            "style" : {
+				"navigationBarTitleText": "选择房间"
+			}
+        }
+        ,{
+            "path" : "pages/confirm-qr-code/confirm-qr-code",
+            "style" : {
+				"navigationBarTitleText": "保存二维码"
+			}
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "酒店AI",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#2c2c2c",
+		"selectedColor": "#1296db",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/tabBar/index/index",
+				"iconPath": "static/tabBarImg/home-select.png",
+				"selectedIconPath": "static/tabBarImg/home.png",
+				"text": "首页"
+			}, {
+				"pagePath": "pages/tabBar/dongtai/dongtai",
+				"iconPath": "static/tabBarImg/dt.png",
+				"selectedIconPath": "static/tabBarImg/dt-select.png",
+				"text": "动态"
+			},
+			{
+				"pagePath": "pages/tabBar/kefu/kefu",
+				"iconPath": "static/tabBarImg/kefu.png",
+				"selectedIconPath": "static/tabBarImg/kefu-select.png",
+				"text": "客服"
+			}, {
+				"pagePath": "pages/tabBar/my/my",
+				"iconPath": "static/tabBarImg/my.png",
+				"selectedIconPath": "static/tabBarImg/my-select.png",
+				"text": "我的"
+			}
+		]
+	}
+}
